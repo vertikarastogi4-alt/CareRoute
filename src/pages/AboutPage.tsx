@@ -4,15 +4,12 @@ import {
   Activity, ArrowRight, CheckCircle2, XCircle,
   TrendingUp, Building2, Users, MapPin,
 } from 'lucide-react';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
 import { TrustBadge } from '@/components/TrustBadge';
 
 export function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
-      <Navbar />
-      <main className="flex-1">
+    <div>
+      <main>
         {/* Hero */}
         <section className="bg-gradient-to-b from-navy-50/50 to-white py-16 lg:py-20">
           <div className="section-container text-center max-w-3xl mx-auto">
@@ -161,7 +158,6 @@ export function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
